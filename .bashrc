@@ -1,9 +1,22 @@
-# welcome
-Cool Custom Welcome Messages on Linux terminal
+# .bashrc
 
-## Add in .bashrc
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
 
-```sh
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+
 function welcome() {
 
   text="░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗\n"
@@ -18,6 +31,3 @@ function welcome() {
 }
 
 welcome
-```
-## Sample
-![Welcome](https://github.com/eugenio-cunha/welcome/terminal.png)
