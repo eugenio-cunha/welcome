@@ -20,4 +20,4 @@ function welcome() {
 welcome
 ```
 ## Sample
-![Welcome](https://github.com/eugenio-cunha/welcome/terminal.png)
+![Welcome](https://github.com/eugenio-cunha/welcome/blob/master/terminal.png)
